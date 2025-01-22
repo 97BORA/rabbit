@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+        "target": "ES2022", // 최신 Node.js 기능 지원
+        "lib": ["ES2023"], // 최신 ECMAScript 라이브러리
+        "module": "ESNext", // ESM 모듈 지원
+        "moduleResolution": "node", // Node.js 환경에서의 모듈 해석
+        "skipLibCheck": true, // 타입 정의 파일 검사 생략
+        "types": ["node"], // Node.js 타입 정의 포함
+
+        /* Bundler mode */
+        "allowImportingTsExtensions": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "noEmit": true,
+
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true
+    },
+    "include": ["vite.config.ts"] // Vite 설정 파일 포함
+}
